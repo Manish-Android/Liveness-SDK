@@ -7,21 +7,24 @@ A lightweight Android SDK for **liveness detection** using **Google ML Kit**. Th
 ✅ **Easy Integration** with just one function call  
 ✅ Works with **Activity Result API**  
 
-### Instal ###
+## Instal
 
 //-------------------Add this in your settings.gradle.kts file -------------------------------------
-
+``` setting Gradle
   maven { url = uri("https://jitpack.io") } // ✅ Add JitPack repo
 
 //----------------- Add this dependency in build.gradle.kts file -----------------------------------
+```
 
+``` build gradle kts
 dependencies {
     implementation("com.github.Manish-Android:Liveness-SDK:1.0.0") // ✅ Replace with latest version
 }
-
-### USE ###
+```
+## USE 
 
 //------------------- Add this in your Activity  ---------------------------------------------------
+``` use
 private val livenessLauncher =
     registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
@@ -33,10 +36,11 @@ private val livenessLauncher =
             Toast.makeText(this, "Liveness Check Failed!", Toast.LENGTH_LONG).show()
         }
     }
+```
 //------------------- Add this line in your on create ---------------------------------------------   
-LivenessSDK.startLivenessCheck(livenessLauncher, this) // ✅ Start liveness check
 
-//-------------------------Now it Done -----------------------------------------------------------
+LivenessSDK.startLivenessCheck(livenessLauncher, this)  // ✅ Start liveness check
+
 
 📝 License
 This SDK uses Google ML Kit for face detection.
