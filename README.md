@@ -12,10 +12,8 @@ A lightweight Android SDK for **liveness detection** using **Google ML Kit**. Th
 //-------------------Add this in your settings.gradle.kts file -------------------------------------
 ``` setting Gradle
   maven { url = uri("https://jitpack.io") } // ✅ Add JitPack repo
-
-//----------------- Add this dependency in build.gradle.kts file -----------------------------------
 ```
-
+//----------------- Add this dependency in build.gradle.kts file -----------------------------------
 ``` build gradle kts
 dependencies {
     implementation("com.github.Manish-Android:Liveness-SDK:1.0.0") // ✅ Replace with latest version
