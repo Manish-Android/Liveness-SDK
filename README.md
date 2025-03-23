@@ -36,15 +36,15 @@ private val livenessLauncher =
     }
 ```
 //------------------- Add this line in your on create ---------------------------------------------   
-
+``` on create
 LivenessSDK.startLivenessCheck(livenessLauncher, this)  // ✅ Start liveness check
+```
 
-
-📝 License
+##📝 License
 This SDK uses Google ML Kit for face detection.
 By using this SDK, you must comply with Google ML Kit's Terms of Service.
 
-📌 Support & Contributions
+##📌 Support & Contributions
 🔹 If you encounter any issues, feel free to open an issue.
 🔹 Want to improve this SDK? Fork it and submit a pull request! 🚀
 
